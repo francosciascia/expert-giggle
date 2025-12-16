@@ -1,12 +1,42 @@
 # Sistema de Gestión de Rutinas de Gimnasio
+Proyecto fullstack para administrar rutinas y ejercicios: frontend en React + Vite (Material UI) y backend en FastAPI + SQLModel conectado a PostgreSQL. Incluye plan semanal, duplicado de rutinas, reordenamiento drag & drop y exportación de rutina en PDF.
 
-Proyecto completo con frontend en React + Vite (Material UI) y backend en FastAPI + SQLModel conectado a PostgreSQL.
+## Características principales
+- CRUD de rutinas con ejercicios asociados.
+- Búsqueda, filtros por día y tipo de ejercicio, y paginación.
+- Reordenamiento de ejercicios por drag & drop dentro de cada día.
+- Duplicar rutinas completas.
+- Exportar cada rutina a PDF.
+- Plan semanal (asignar rutina a cada día).
+- Documentación Swagger y ReDoc en el backend.
 
 ## Estructura
-- `backend/`: API RESTful con FastAPI, SQLModel y documentación completa en su `README.md`.
-- `frontend/`: SPA construida con Vite + React + Material UI y documentación en su `README.md`.
+- `backend/`: API RESTful FastAPI/SQLModel (PostgreSQL). Ver `backend/README.md` para instalación, configuración y endpoints.
+- `frontend/`: SPA Vite + React + MUI. Ver `frontend/README.md` para instalación, configuración y comandos.
+
+## Requisitos previos
+- Python 3.10+ y PostgreSQL 12+ (para el backend).
+- Node.js 18+ y npm/yarn (para el frontend).
 
 ## Pasos rápidos
-1. Configurar y arrancar el backend (ver `backend/README.md`).
-2. Ejecutar el frontend (ver `frontend/README.md`).
+1) Backend  
+```powershell
+cd backend
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
+Doc: Swagger en `http://localhost:8000/docs`
 
+2) Frontend  
+```bash
+cd frontend
+npm install
+npm run dev
+```
+App en `http://localhost:5173/`
+
+## Notas
+- Configurar `DATABASE_URL` en `backend/.env` y `VITE_API_URL` en `frontend/.env` si usas otro host/puerto.
+- No subas `venv/` ni `node_modules/` (ya está en `.gitignore`).*** End Patchရဲолоийть|
