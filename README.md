@@ -37,6 +37,3 @@ npm run dev
 ```
 App en `http://localhost:5173/`
 
-## Notas
-- Configurar `DATABASE_URL` en `backend/.env` y `VITE_API_URL` en `frontend/.env` si usas otro host/puerto.
-- No subas `venv/` ni `node_modules/` (ya está en `.gitignore`).*** End Patchရဲолоийть|
