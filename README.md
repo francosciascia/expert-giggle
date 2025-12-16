@@ -1,5 +1,5 @@
 # Sistema de Gestión de Rutinas de Gimnasio
-Proyecto fullstack para administrar rutinas y ejercicios: frontend en React + Vite (Material UI) y backend en FastAPI + SQLModel conectado a PostgreSQL. Incluye plan semanal, duplicado de rutinas, reordenamiento drag & drop y exportación de rutina en PDF.
+Proyecto final de Programación IVfullstack para administrar rutinas y ejercicios: frontend en React + Vite (Material UI) y backend en FastAPI + SQLModel conectado a PostgreSQL. Incluye plan semanal, duplicado de rutinas, reordenamiento drag & drop y exportación de rutina en PDF.
 
 ## Características principales
 - CRUD de rutinas con ejercicios asociados.
